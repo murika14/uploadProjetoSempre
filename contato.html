@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Barlow Semi Condensed' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favico.jpg" type="image/x-icon">
+    <title>Fale Conosco</title>
+</head>
+
+<body id="conteiner-contato">
+    <div id="conteiner-lojas">
+        <div id="menu-pag">
+            <div>
+                <img src="imagens/menu.png" alt="clique aqui para abrir ou fechar o menu" id="btnmenu"
+                    onmouseover="openNav()" onmouseout="btnClose()" width="40px">
+            </div>
+
+            <div id="menupri" class="menupri" onmouseover="openNav()" onmouseout="btnClose()">
+                <ul>
+                    <li><a href="planosCidade.html">Planos por cidade</a></li>
+                    <hr id="horizontal">
+                    <li><a href="nossasLojas.html">Nossas Lojas</a></li>
+                    <hr id="horizontal">
+                    <li><a href="canaisdeatendimento.html">Canais de Atendimento</a></li>
+                    <hr id="horizontal">
+                    <li><a href="contato.html">Fale Conosco</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="textocontato">
+            <h2 class="h2contato">CONTATO</h2>
+        </div>
+
+        <div id="toda-area-contato">
+            <div id="tittle-area-contato">
+                <h1>Dúvidas e Sugestões</h1>
+                <p>Preencha seus dados, e envie-nos uma mensagem com o que precisa.</p> <br>
+            </div>
+
+            <form id="centralizar">
+
+                <fieldset class="grupo">
+                    <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+                    <div class="campo">
+                        <label for="nome"><strong>Nome</strong></label>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+
+                    <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+                    <div class="campo">
+                        <label for="sobrenome"><strong>Sobrenome</strong></label>
+                        <input type="text" name="sobrenome" id="sobrenome" required>
+                    </div>
+                </fieldset>
+
+                <!-- Campo de email com-->
+                <div class="campo">
+                    <label for="email"><strong>Email</strong></label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <!-- Campo de desenvolvimento web com botões selecionáveis e css de classe "campo" -->
+                <div class="campo">
+                    <label><strong>Qual a cidade?</strong></label>
+                    <select>
+                        <option>Selecione a Cidade</option>
+                        <option>Abaete</option>
+                        <option>Aruari</option>
+                        <option>Belo Vale</option>
+                        <option>Betim</option>
+                        <option>Florestal</option>
+                        <option>Juatuba</option>
+                        <option>Mateus Leme</option>
+                        <option>Moeda</option>
+                        <option>Pitangui</option>
+
+                    </select>
+
+                    </select>
+                </div>
+
+                <!-- Campo de setor css de classe "campo" -->
+                <div class="campo">
+                    <label><strong>Setor</strong></label>
+                    <select id="setor" required>
+                        <option>Setor</option>
+                        <option>Suporte Tecnico Residencial e Comercial</option>
+                        <option>Financeiro Residencial e Comercial</option>
+                        <option>Comercial Pessoa Fisica</option>
+                        <option>Comercial Pessoa Jurídica</option>
+                        <option>Ouvidoria</option>
+
+                    </select>
+                </div>
+
+                <fieldset class="grupo">
+                    <!-- Campo de tecnologias para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+                    <div id="check">
+                        <label><strong>Sua opiniao sobre a Sempre Internet:</strong></label><br><br>
+                        <input type="radio" id="tecnologia1" name="tecnologia1" value="Exelente">
+                        <label for="tecnologia1">Exelente</label>
+                        <input type="radio" id="tecnologia2" name="tecnologia1" value="bom">
+                        <label for="tecnologia2"> Bom</label>
+                        <input type="radio" id="tecnologia3" name="tecnologia1" value="medio">
+                        <label for="tecnologia3"> Médio</label>
+                        <input type="radio" id="tecnologia4" name="tecnologia1" value="Insatisfatório">
+                        <label for="tecnologia4"> Insatisfatório</label>
+                        <input type="radio" id="tecnologia5" name="tecnologia1" value="Pessimo">
+                        <label for="tecnologia5"> Péssimo</label>
+
+                </fieldset>
+                <!-- Caixa de texto -->
+                <div class="campo">
+                    <br>
+                    <label for="experiencia"><strong>Conte um pouco mais da sua experiência: </strong></label>
+                    <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+                </div>
+
+                <!-- Botão para enviar o formulário -->
+                <button class="botao" type="submit" onsubmit="">Concluído</button>
+
+            </form>
+
+
+            <div>
+                <div class="prop-footer">
+                </div>
+            </div>
+            <div class="todoRodape">
+                <div class="infoRodape">
+                    <div class="footer">
+                        <img src="imagens/logo-Nova-sempre-horizontal-negativo-roxo-p6c1s2sn4a3j2rggb6ihw4ur8dv1ndev33foa38qn4.png"
+                            alt="" width="80%" height="30%">
+                        <p>Somos uma operadora de telecomunicações, autorizada pela Agência Nacional de Telecomunicações
+                            (Anatel) a prestar serviços de Comunicação Multimídia (SCM) e que busca prover soluções
+                            customizadas para você e sua empresa.</p>
+                    </div>
+                    <hr>
+                    <div class="footer">
+                        <h2>MAPA DO SITE</h2>
+                        <ul>
+                            <a href="">
+                                <li>Planos por cidade</li>
+                            </a>
+                            <a href="">
+                                <li>Nossas Lojas</li>
+                            </a>
+                            <a href="">
+                                <li>Canais de Atendimento</li>
+                            </a>
+                            <a href="">
+                                <li>Entrar em contato</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="footer">
+                        <H2>SIGA-NOS</H2>
+                        <a href=""><img src="imagens/INSTAGRAM.png" width="10%" alt=""></a>
+                        <a href=""><img
+                                src="imagens/62559-facebook_-computer-facebook-inc.-icons-download-free-image-removebg-preview.png"
+                                width="10%" alt=""></a>
+                        <a href=""><img src="imagens/77688-logo-computer-youtube-icons-free-hq-image.png" width="12%"
+                                alt=""></a>
+
+
+                    </div>
+                </div>
+                <div class="infoRodape">
+                    <div class="footer">
+                        <h3 class="supTec"><i class="fas fa-users"></i>Suporte Tecnico</h3>
+                        <span>0800 300 0800</span>
+                        <p>Segunda à Sexta. 8H às 22H.</p>
+                        <p>Sábados, Domingos e feriados. 8H às 18H.</p>
+                    </div>
+                    <hr>
+                    <div class="footer">
+                        <h3 class="CanaisAtendimento"> <i class="fas fa-headset"></i> Canais de Atendimento </h3>
+                        <p>Na Sempre você tem diversas maneiras para falar. Clique e escolha a melhor. </p>
+                        <button><a href="canaisdeatendimento.html">Consultar Canais</a> </button>
+                        <p>LGPD – E-mail: dpo@sempre.net.br</p>
+                        <p>Este e-mail trata exclusivamente de demandas relacionadas a LGPD – Demais assuntos deveram
+                            ser tratados através do nosso canal de atendimento 0800-300.0800.</p>
+
+                    </div>
+                    <hr>
+                    <div class="footer">
+                        <h3 class="sedeAdm"> <i class="fas fa-store"></i> Sede Administrativa</h3>
+                        <address>
+                            Av. Governador Valadares, 737, 6º andar,
+                            Edifício Cephas Workcenter . Centro . Betim
+                            Minas Gerais . CEP.: 32600-135
+                            De Segunda à Sexta . 8H às 18H.
+                        </address>
+                        <b>Não realizamos atendimento presencial na Sede Administrativa.</b><br>
+                        <button><a class="btnConsLojas" href="nossasLojas.html">Consultar Lojas</a> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
