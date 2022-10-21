@@ -933,7 +933,12 @@ width: 300px;
         width: 85%;
         padding: 0;
         height: 120px;
+
     }
+    .espaço-serviçosdigitais{
+        width: 220px;
+    }
+    
     #conteudo{
         grid-template-columns: auto auto;
     }
@@ -962,6 +967,7 @@ width: 300px;
                 font-size: 6pt;
                 
             }
+           
             .menupri li{
                 display: inline;
             }
