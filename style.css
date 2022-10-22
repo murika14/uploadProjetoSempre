@@ -279,19 +279,17 @@ a{
 }
 .infoRodape{
     width: 100%;
+   /* height: 450px;*/
     display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
     border-bottom: px solid rgb(120, 120, 245);
-    
-    
- 
 }
 .footer{
     text-align: left;
     width: 50%;
-    /*height: 40vh;*/
-    padding: 30px 50px 30px 30px;   
+    padding: 50px 50px 30px 30px;   
     font-family: 'Barlow', sans-serif;
+    
 }
 
 .footer p {
@@ -529,6 +527,7 @@ fieldset.grupo .campo {
 .position-texto{
     display: inline-block;
     padding-bottom: 30px;
+    margin: 30px;
 }
 .position-texto h1{
     color: white;
@@ -595,12 +594,10 @@ fieldset.grupo .campo {
 
 .txtescolherplano{
     width: 100%;
-    display: flex;
-    justify-content: center;
 }
 .txtescolherplano h1{
     color: #4a3585;
-    width: 40%;
+    width: 100%;
     
     margin-bottom: 80px;
     background-color: orange;
@@ -905,10 +902,6 @@ fieldset.grupo .campo {
     width: 150px;
     left: -10px;
 }
-.txtescolherplano {
-    width: 1030px;
-    display: block;
-}
 .container-planos{
 width: 50%;
 margin-bottom: 0;
@@ -935,13 +928,42 @@ width: 300px;
         height: 120px;
 
     }
+    .container01-planos{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
     .espaço-serviçosdigitais{
         width: 220px;
     }
+    .footer{
+        padding: 30px;
+        height: auto;
+    }
+
     
     #conteudo{
         grid-template-columns: auto auto;
     }
+    .infoRodape{
+        display: block;
+        
+    }
+    .container01-planos{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        
+    }
+    .container-planos .card{
+        width: 100%;
+        height: auto;
+    }
+    .container-planos{
+        width: 30%;
+    }
+   
 }
 
 @media screen and (max-width: 912px){
@@ -949,17 +971,55 @@ width: 300px;
         width: 94%;
         padding: 0;
         height: 120px;
-    }}
+    }
+    .footer{
+        margin: 0 auto;
+    }
+
+}
     @media screen and (max-width: 1024px){
         .menupri{
             width: 93%;
-            padding: 0;
+            padding: 0;  
             
-            
+        }
+        .img-position{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            left: 170px;
+            width: 40%;
+        }
+        .position-texto{
+            margin: 0 auto;
+            min-width: 500px;
+            margin-left: 10px;
+        }
+        #atendimentoConteiner{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .footer{
+            margin: 0 auto;
         }
         .endCidades{
             height: 200px;
         }
+        #centralizar{
+            margin-left: 0;
+            display: block;
+        }
+        .campo text-area{
+            width: 80%;
+        }
+        .campo select option{
+            padding-right: 0;
+        } 
+       
+}
+       
         @media screen and (max-width: 412px){
             .menupri{
                 width: 88%;
@@ -975,6 +1035,7 @@ width: 300px;
 
             .infoRodape{
                 display: block;
+                
             }
 
 
@@ -990,12 +1051,25 @@ width: 300px;
             #conteudo{
                 grid-template-columns: auto;
             }
-            
+       
+        
+    }           
 
-        }
+        
+        @media screen and (max-width: 690px){
+            .infoRodape{
+                display: block; 
+               }
+               .container-planos{
+                width: 50%;
+               }
+            }
         @media screen and (max-width: 540px){
             .infoRodape{
-                display: block;
+             display: block; 
+            }
+            .footer{
+                margin: 0 auto;
             }
             .menupri{
                 width: 90%;
@@ -1020,37 +1094,17 @@ width: 300px;
                 height: 150px;
                 width: 88%;
             }
-            .txtescolherplano {
-                width:100%;
-                display: block;
-                border: 5px solid red;
         }
-        .container-planos{
-            width: 50%;
-            margin-bottom: 0;
-          margin-top: 0;
-          height: auto;
-        }
-        #bodyplanos{
-            width: 500px;
            
+
+        @media screen and (max-width: 375px){
+            .menupri{
+                height: 200px;
+                width: 80%;
+            }
+            .txtescolherplano {
+                width: 100%;
         }
-        .container01-planos{
-            display: block;
-        }
-        .container-planos .card{
-            width: 400px;
-        }
-        .espaço-serviçosdigitais{
-            width: 300px;
-        }
-        .texto-serviços{
-            width: 400px;
-            display: block;
-        }.cont-serviçosdigitais{
-            display: block;
-        }
-       
         .areaduvidas{
             width:400px;
         }
@@ -1058,58 +1112,11 @@ width: 300px;
             width: 400px;
             display: block;
         }
-        .textoMenu{
-            width: 400px;
-        }
-       #menu-pag{
-        width: 400px;
-       }
        .conteiner-lojas{
         width: 400px;
        }
-
-}
-
-        @media screen and (max-width: 375px){
-            .menupri{height: 200px;
-                width: 80%;
-            }
-            .txtescolherplano {
-                width: 800px;
-                display: block;
-        }
-        .container-planos{
-            width: 50%;
-            margin-bottom: 0;
-          margin-top: 0;
-          height: auto;
-        }
-        .container01-planos{
-            display: block;
-        }
-        .container-planos .card{
-            width: 350px;
-        }
-        .espaço-serviçosdigitais{
-            width: 300px;
-        }
         
-        
-        
+    }     
         
             
-    }
-        @media screen and (max-width: 127px){
-
-            .infoRodape{
-                display: block;
-            }
-            
-        }
-
-     
-    }
-
-
-
-
+    
